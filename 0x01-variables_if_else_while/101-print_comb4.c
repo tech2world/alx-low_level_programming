@@ -21,7 +21,8 @@ int main(void)
 		{
 			for (one = '0'; one <= '9'; one++)
 			{
-				if (!((one == tens) || (tens == units) || (tens > one) || (units > tens))) /* remove repetition*/
+				if (!((one == tens) || (tens == units) || (tens > one)
+							|| (units > tens))) /* remove repetition*/
 				{
 					putchar(units);
 					putchar(tens);
