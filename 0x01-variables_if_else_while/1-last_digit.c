@@ -4,9 +4,9 @@
 
 /**
  * main - the beginging of the program
- * description: print a statement based on last digit of the random number generated
+ * description: print a statement based on last digit of the random number
  *
- * return (0) success
+ * Return (0) success
  */
 
 int main(void)
@@ -17,7 +17,7 @@ int main(void)
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	m = n % 10;
-	
+
 	if (m > 5)
 		printf("Last digit of %i is %i and is greater than 5\n", n, m);
 	else if (m == 0)
