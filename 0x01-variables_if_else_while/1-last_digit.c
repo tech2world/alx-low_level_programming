@@ -6,7 +6,7 @@
  * main - the beginging of the program
  * description: print a statement based on last digit of the random number
  *
- * Return (0) success
+ * Return: (0) success
  */
 
 int main(void)

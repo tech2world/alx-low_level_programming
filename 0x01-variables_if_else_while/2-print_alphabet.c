@@ -4,13 +4,13 @@
  * main - beginning of tbe program
  * description : print alphabets in lower case
  *
- * return 0 
+ * Return: 0
  */
 
 int main(void)
 {
 	int c = 'a';
-	
+
 	while (c <= 'z')
 	{
 		putchar(c);
@@ -20,4 +20,3 @@ int main(void)
 	putchar('\n');
 	return (0);
 }
-	
