@@ -4,7 +4,7 @@
  * main - behinning of function
  * Description: print alphabets in lower and upper case
  *
- * return 0 always
+ * Return: 0 always
  */
 
 int main(void)
