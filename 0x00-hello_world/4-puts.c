@@ -2,9 +2,9 @@
 
 /**
  * main - the main function of the progran
- * return - always return (0) success
+ * Return: always return (0) success
  *
- * this fnction uses puts 
+ * this fnction uses puts
  */
 int main(void)
 {

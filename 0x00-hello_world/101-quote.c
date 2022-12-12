@@ -3,6 +3,7 @@
 
 /**
  * main - beginning of the program
+ * Description: prints to std err
  * return: 1
  *
  */

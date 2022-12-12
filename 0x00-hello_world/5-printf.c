@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - entry point 
+ * main - entry point
  * return: (0)
  *
  * this function uses printf to display function output
