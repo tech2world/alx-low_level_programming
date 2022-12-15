@@ -1,7 +1,8 @@
 #include <stdio.h>
 /**
  * main - entry point
- * return: (0)
+ * Description: uses printf to output
+ * Return: (0)
  *
  * this function uses printf to display function output
  */
