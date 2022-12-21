@@ -1,4 +1,4 @@
-include "main.h"
+#include "main.h"
 
 /**
   * puts_half - prints half of a string
@@ -8,9 +8,8 @@ include "main.h"
 void puts_half(char *str)
 {
 	int index = 0;
-
-	len = 0;
-	n;
+	int len = 0;
+	int n;
 
 	while (index >= 0)
 	{
@@ -24,7 +23,7 @@ void puts_half(char *str)
 	else
 		n = (index - 1) / 2;
 
-	for (i++; n < index; i++)
+	for (n++; n < index; n++)
 		_putchar(str[n]);
 
 	_putchar('\n');
