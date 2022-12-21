@@ -1,5 +1,7 @@
+#include "main.h"
+
 /**
-  * main - check tge code
+  * main - check the code
   *
   * Return: 0 always
   *
