@@ -2,7 +2,7 @@
 
 /**
   * is_prime_number - check if a num is a prime num.
-  *
+  * @n: input int num.
   * Return: 1 if prime else 0.
   */
 int is_prime_number(int n)
