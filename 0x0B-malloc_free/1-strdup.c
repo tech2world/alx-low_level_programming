@@ -23,7 +23,7 @@ char *_strdup(char *str)
 	{
 		return(NULL);
 	}
-	for (c = 0, c < i;c++)
+	for (c = 0, c < i; c++)
 	{
 		a[c] = str[c];
 	}
