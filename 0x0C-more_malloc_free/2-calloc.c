@@ -8,7 +8,7 @@
   *
   * Return: NULL is size or nmemb == 0.
   * NULL if memory fails.
-  pointer to memory allocated if successful.
+  * pointer to memory allocated if successful.
   */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
