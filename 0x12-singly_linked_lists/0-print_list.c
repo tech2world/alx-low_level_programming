@@ -8,10 +8,10 @@
   */
 size_t print_list(const list_t *h)
 {
-	size_t n_len;
+	int n_len;
 
 	n_len = 0;
-	while (h != NULL)
+	while (h)
 	{
 		if (h->str == NULL)
 		{
