@@ -1,12 +1,12 @@
 #include "lists.h"
 
 /**
-  * _strlen - find the length of a string.
-  * @str: str
+  * _strlen - finds len of string
+  * @str: string
   *
   * Return: length of string
   */
-unsigned int _strlen(char *str)
+int _strlen(char *str)
 {
 	unsigned int i;
 
@@ -16,22 +16,25 @@ unsigned int _strlen(char *str)
 }
 
 /**
-  * add_node - adds node ro beginning of alinked list
+  * add_node_end - add a new node to end of linked list
   * @head: double pointerto a linked list
-  * @str: string to afd to new node
+  * @str: str to be added to linked list
   *
   * Return: pointer to new node
   */
-list_t *add_node(list_t **head, const char *str)
+list_t *add_node_end(list_t **head, const char *str)
 {
-	list_t *new;
+	list_t *new, *temp;
 
 	if (str == NULL)
+	{
 		return (NULL);
-
+	}
 	new = malloc(sizeof(list_t));
 	if (new == NULL)
+	{
 		return (NULL);
+	}
 	new->str = strdup(str);
 	if (new->str == NULL)
 	{
@@ -39,7 +42,17 @@ list_t *add_node(list_t **head, const char *str)
 		return (NULL);
 	}
 	new->len = _strlen(new->str);
-	new->next = *head;
-	*head = new;
+	new->next = NULL;
+	if (*head == NULL)
+	{
+		*head = new;
+		return (new);
+	}
+	temp = *head;
+	while (temp->next)
+	{
+		temp = temp->next;
+	}
+	temp->next = new;
 	return (new);
 }
