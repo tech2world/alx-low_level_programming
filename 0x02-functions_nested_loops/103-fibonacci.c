@@ -19,7 +19,7 @@ int main(void)
 		if (tot_sum > 4000000)
 			break;
 		if ((fib_sum % 2) == 0)
-			tot_sum += tot_sum;
+			tot_sum += fib_sum;
 
 		fib1 = fib2;
 		fib2 = fib_sum;
