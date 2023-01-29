@@ -5,12 +5,13 @@
 /**
  * main - the start of the fuction to generate a random number
  *
- * return: always return (0) success
+ * Return: always return (0) success
  *
  */
 int main(void)
 {
 	int n;
+
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 
@@ -22,7 +23,7 @@ int main(void)
 	{
 		printf("%d is zero\n", n);
 	}
-	else (n < 0)
+	else
 
 		printf("%d is negative\n", n);
 
