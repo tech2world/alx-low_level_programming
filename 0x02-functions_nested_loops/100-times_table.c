@@ -8,30 +8,40 @@
   */
 void print_times_table(int n)
 {
-	int row;
-	int column;
-	int product;
+	int row, col, prod;
 
-	if (n < 0 || n >= 15)
-		return;
-	for (row = 0; row <= n; row ++)
+	if (n >= 0 &&  n <= 15)
 	{
-		for (column = 0; column <= n; column++)
+
+		for (row = 0; row <= n; row ++)
 		{
-			product = row * column;
-			if (column == 0)
-				_putchar('0' + product);
-			else
+			_putchar('0');
+			
+			for (col = 1; col <= n; col++)
+			{
 				_putchar(',');
 				_putchar(' ');
-				if (product <== 9)
+
+				prod = row * col;
+				
+				if (prod <= 99)
 					_putchar(' ');
+				if (prod <= 9)
 					_putchar(' ');
-					_putchar('0' + product);
-				else if (product > 9 && product  < 100)
-					_putchar(' ');
-					_putchar('0' + (product / 10));
-					_putchar('0' + (product % 1));
-				else if (product >= 100)
+				if (prod >= 100)
+				{
+					_putchar((prod / 100) + '0');
+					_putchar(((prod / 10) % 10) + '0');
+				}
+				else if (prod <= 99 && prod >= 10)
+				{
+					_putchar((prod / 10) + '0');
+				}
+				_putchar((prod % 10) + '0');
+			}
+			_putchar('\n');
+		}
+	}
+}
 
 					
