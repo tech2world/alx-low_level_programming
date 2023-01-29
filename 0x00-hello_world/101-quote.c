@@ -4,7 +4,7 @@
 /**
  * main - beginning of the program
  * Description: prints to std err
- * return: 1
+ * Return: 1
  *
  */
 int main(void)
