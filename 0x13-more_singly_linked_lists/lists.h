@@ -1,5 +1,5 @@
 #ifndef lists_h
-#define list_h
+#define lists_h
 
 #include <stdio.h>
 #include <stddef.h>
