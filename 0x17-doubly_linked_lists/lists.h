@@ -18,7 +18,7 @@ typedef struct distinct_s
     int n;
     struct distinct_s *prev;
     struct distinct_s *next;
-} distinct_t;
+} dlistint_t;
 
 size_t print_dlistint(const dlistint_t *h);
 size_t dlistint_len(const dlistint_t *h);
